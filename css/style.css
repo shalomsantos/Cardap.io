@@ -54,7 +54,7 @@ i{
     transition: 500ms;
 }
 .icon-car{
-    font-size: 5rem;
+    font-size: 2rem;
     color: #181D31;
 }
 .list-itens{
@@ -77,8 +77,5 @@ i{
 @media only screen and (max-width: 600px) {
     .nav-types{
         overflow-x: scroll;
-    }
-    .icon-car{
-        font-size: 3.5rem;
     }
 }
