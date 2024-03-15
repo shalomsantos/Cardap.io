@@ -5,74 +5,80 @@
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
-header{
-    background-color: #E5273D;
+header, footer{
+    background-color: #181D31;
+    padding: 0.5rem;
 }
-.nav{
+.btn-primary{
+    background-color: #181D31 !important;
+    border: #181D31 !important;
+}
+.nav-link{
+    color: white !important;
+    
+}
+.nav-item{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 12vh;
-    color: white;
 }
-p{
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.banner{
-    display: flex;
-    gap: 1rem;
-    justify-content: end;
-    font-size: 0.8rem;
-}
-.menu-hamburguer{
-    display: none;
-}
-.links{
-    display: block;
-}
-.logo{
+.nav-link::before{
+    content: "";
+    width: 0%;
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
     position: absolute;
-    bottom: -30%;
-    width: 110px;
-    height: 110px;
-    border-radius: 0.5rem;
-    background-color: rgb(221, 221, 221);
+    background: #6096B4;
+    border-radius: 1rem;
+
+    transition: 500ms;
 }
-.variedades{
-    display: flex;
-    flex-direction: column;
-}
-.panel{
-    background-color: white;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1rem 0;
-}
-.img-card{
-    width: 80px;
-    height: 80px;
-    background-color: grey;
-    border-radius: 50%;
-}
-main{
-    background-color: #F9F9F9;
-    box-shadow: 0 1.5rem 1rem -2px rgba(205, 205, 205, 0.446) inset; 
-}
-a{
-    text-decoration: none !important;
-    color: black !important;
+.nav-link:hover::before{
+    width: 100%;
 }
 i{
-    color: #E5273D;
+    color: white;
+}
+.active{
+    color: #6096B4 !important;
+}
+.active::before{
+    content: "";
+    width: 100%;
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #6096B4;
+    border-radius: 1rem;
+
+    transition: 500ms;
+}
+.icon-car{
+    font-size: 5rem;
+    color: #181D31;
+}
+.list-itens{
+    width: 10rem !important;
+    min-width: 10rem !important;
+    overflow: hidden;
+}
+.list-itens::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.3rem;
+    background-color: #181D31;
+
+    transition: 500ms;
 }
 
 @media only screen and (max-width: 600px) {
-    .menu-hamburguer{
-        display: block;
+    .nav-types{
+        overflow-x: scroll;
     }
-    .links{
-        display: none !important;
+    .icon-car{
+        font-size: 3.5rem;
     }
 }
