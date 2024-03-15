@@ -14,12 +14,12 @@
       <nav class="navbar container navbar-expand-sm h-100">
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="fa-solid fa-n"></i>
-            <i class="fa-solid fa-b me-2"></i>
+            <i class="fa-solid fa-n text-white"></i>
+            <i class="fa-solid fa-b text-white me-2"></i>
             <p class="text-white m-0 p-0">Nativas Burguer</p>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="navbar-toggler-icon fa-solid fa-bars"></i>
+            <i class="navbar-toggler-icon fa-solid fa-bars text-white"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav gap-4 ms-auto mb-lg-0">
@@ -41,112 +41,91 @@
 
     <main>
       <div class="container">
-        <div class="d-flex gap-3 py-3 nav-types">
-          
-          <div class="card list-itens">
-            <div class="card-body d-flex gap-4 flex-column justify-content-between text-center">
-              <i class="fa-solid fa-utensils icon-car"></i>
-              <h5 class="card-title">Combos</h5>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link subNav-link fw-bold active" href="#"><i class="fa-solid fa-utensils me-2"></i>Combos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link subNav-link fw-bold" href="#"><i class="fa-solid fa-spoon me-2"></i>Entradas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link subNav-link fw-bold" href="#"><i class="fa-solid fa-burger me-2"></i>Hamburguer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link subNav-link fw-bold" href="#"><i class="fa-solid fa-wine-bottle me-2"></i>Bebidas</a>
+          </li>
+        </ul>
+
+        <div class="accordion d-flex flex-column gap-3 my-2" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Combos
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div class="card list-itens">
-            <div class="card-body d-flex gap-4 flex-column text-center">
-              <i class="fa-solid fa-spoon icon-car"></i>
-              <h5 class="card-title">Entradas</h5>
+          <div class="accordion-item border">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Entradas
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div class="card list-itens">
-            <div class="card-body d-flex gap-4 flex-column text-center">
-              <i class="fa-solid fa-burger icon-car"></i>
-              <h5 class="card-title">Hamburguer</h5>
+          <div class="accordion-item border">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Hamburguer
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div class="card list-itens">
-            <div class="card-body d-flex gap-4 flex-column text-center">
-              <i class="fa-solid fa-wine-bottle icon-car"></i>
-              <h5 class="card-title">Bebidas</h5>
+          <div class="accordion-item border">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Bebidas
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="row py-3">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up.</p>
-                <div class="d-flex justify-content-between">
-                  <p class="my-auto">R$ 20,00</p>
-                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
+        <!-- <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up.</p>
-                <div class="d-flex justify-content-between">
-                  <p class="my-auto">R$ 20,00</p>
-                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up.</p>
-                <div class="d-flex justify-content-between">
-                  <p class="my-auto">R$ 20,00</p>
-                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up.</p>
-                <div class="d-flex justify-content-between">
-                  <p class="my-auto">R$ 20,00</p>
-                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up.</p>
-                <div class="d-flex justify-content-between">
-                  <p class="my-auto">R$ 20,00</p>
-                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </main>
 
     <footer class="text-end">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary"><i class="fa-brands fa-facebook-f"></i></button>
-        <button type="button" class="btn btn-primary"><i class="fa-brands fa-x-twitter"></i></button>
-        <button type="button" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i></button>
-        <button type="button" class="btn btn-primary"><i class="fa-brands fa-instagram"></i></button>
-        <button type="button" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i></button>
-      </div>
+      <a class="btn"><i class="fa-brands text-white fa-facebook-f"></i></a>
+      <a class="btn"><i class="fa-brands text-white fa-x-twitter"></i></a>
+      <a class="btn"><i class="fa-brands text-white fa-linkedin"></i></a>
+      <a class="btn"><i class="fa-brands text-white fa-instagram"></i></a>
+      <a class="btn"><i class="fa-brands text-white fa-whatsapp"></i></a>
+      
     </footer>
 </body>
 </html>
